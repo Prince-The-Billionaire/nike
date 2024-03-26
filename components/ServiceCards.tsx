@@ -9,8 +9,8 @@ const ServiceCards = () => {
   ]
   return (
     <div className='service-cards'>
-        {ServiceArray.map((items) =>(
-          <div className='service-card'>
+        {ServiceArray.map((items,index) =>(
+          <div className='service-card' key={index}>
             <Image
               src={items.url}
               alt={`${items.title} icons`}

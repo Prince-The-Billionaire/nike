@@ -10,9 +10,10 @@ const CustomerCards = () => {
     ]
   return (
    <div className='customer-cards'>
-        {CustomerArray.map((items) => (
-             <div className='customer-card'>
+        {CustomerArray.map((items,index) => (
+             <div className='customer-card' key={index}>
                 <Image
+                    key={index}
                     src={items.url}
                     alt='customer'
                     width={100}
@@ -22,7 +23,7 @@ const CustomerCards = () => {
                 <p className='customer-text'>
                     {items.text}
                 </p>
-                <div className='product-rating'>
+                <div className='product-rating' key={index}>
                     <Image 
                     src='/icons/star.svg'
                     alt='star'

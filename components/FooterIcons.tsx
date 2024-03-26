@@ -9,8 +9,8 @@ const FooterIcons = () => {
     ]
   return (
     <div className='icons-div '>
-        {icons.map((items) => (
-            <div>
+        {icons.map((items,index) => (
+            <div key={index}>
                 <Image
                     src={items.url}
                     alt={items.alt}

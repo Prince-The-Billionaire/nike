@@ -9,12 +9,12 @@ const FooterLinks = () => {
     ]
   return (
     <div className='footerlinks'>
-        {links.map((items) => (
-            <div className='text-white gap-5 flex-col flex'>
+        {links.map((items,index) => (
+            <div className='text-white gap-5 flex-col flex' key={index}>
                 <h1 className='service-cardtitle'>{items.title}</h1>
                 <ul className='footerlinks-text'>
-                    {items.links.map((item) => (
-                        <a><li>{item}</li></a>
+                    {items.links.map((item,indexs) => (
+                        <a key={indexs}><li>{item}</li></a>
                     ))}
                 </ul>
             </div>

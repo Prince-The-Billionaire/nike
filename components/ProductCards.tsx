@@ -11,8 +11,8 @@ const productArray = [
 const ProductCards = () => {
   return (
     <div className='productCards'>
-        {productArray.map((items) => (
-          <div className='productCard'>
+        {productArray.map((items,index) => (
+          <div className='productCard' key={index}>
           <Image
             src={items.url}
             alt={items.title}
@@ -20,7 +20,7 @@ const ProductCards = () => {
             height={250}
             className='productcard-image'
           />
-          <div className='product-rating'>
+          <div className='product-rating' key={index}>
             <Image 
               src='/icons/star.svg'
               alt='star'

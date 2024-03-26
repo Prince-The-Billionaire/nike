@@ -20,6 +20,7 @@ const ShoeCards:React.FC<Props> = ({images,onImageSelect}) => {
         {
             images.map((imageUrl,index) => (
                 <Image
+                key={index}
                     src={imageUrl}
                     width={140}
                     height={140}

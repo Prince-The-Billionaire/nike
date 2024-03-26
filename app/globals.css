@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --pale-blue:#bfd6ff;
+  }
+}
+
+
+.padding{
+  @apply p-12 max-sm:p-4
+}
+.navbar{
+  @apply bg-white shadow-sm flex flex-row px-6 z-10 sticky top-0 w-full py-8 justify-between items-center
+}
+.navbar-links{
+  @apply text-slate-400 flex flex-row  gap-8 max-sm:hidden 
+}
+.hamburger-icon{
+  @apply hidden max-sm:block
+}
+.hero--section{
+  @apply p-12 relative flex flex-col
+}
+.hero-text-orange{
+  @apply text-orange-600
+}
+.hero-text{
+  @apply w-max md:text-5xl font-extrabold lg:text-7xl pt-16  max-sm:text-4xl 
+}
+.hero-subtext{
+  @apply text-slate-400 text-lg mt-20 
+}
+.hero-button{
+  @apply rounded-3xl mt-5 text-white p-2 gap-4 items-center px-6 text-lg bg-orange-600 flex flex-row w-max max-sm:text-sm
+}
+.ratings-number{
+  @apply text-5xl font-bold max-sm:text-3xl
+}
+.ratings-text{
+  @apply text-slate-400 
+}
+.ratings{
+  @apply flex flex-col gap-2 items-center
+}
+/*ratings-pdiv means ratings parent div*/
+.ratings-pdiv{
+  @apply flex flex-row gap-10 mt-12 
+}
+.shoe{
+  @apply max-sm:hidden lg:absolute right-5 top-0 -z-10 bg-blue-100 md:right-10
+}
+.white-bg{
+  @apply bg-white w-max pr-6 
+}
+.shoe-card{
+  @apply rounded-2xl bg-slate-100  hover:border-orange-400 hover:border-2
+}
+/*pdiv means parent div*/
+.shoe-card-pdiv{
+  @apply max-sm:hidden  absolute right-10 bottom-24 flex flex-row w-max gap-3
+}
+.productcard-image{
+  @apply rounded-xl
+}
+.product-rating{
+  @apply flex flex-row  gap-2 items-baseline
+}
+.products-title{
+  @apply font-bold text-xl
+}
+.product-currency{
+  @apply text-red-600 font-semibold text-xl
+}
+.productCard{
+  @apply hover:cursor-pointer flex flex-col gap-2 p-2 justify-center
+}
+.productCards{
+  @apply flex flex-row flex-wrap
+}
+.maintext{
+  @apply text-4xl font-semibold max-sm:text-2xl
+}
+.subtext{
+  @apply text-slate-400 mt-5 w-[26rem] text-lg max-sm:w-fit max-sm:text-sm
+}
+.Popularproducts{
+  @apply flex flex-col gap-3 px-24 max-sm:px-0
+}
+.superquality-pdiv{
+  @apply flex flex-row px-10 max-sm:px-0 flex-wrap
+}
+.service-icons{
+  @apply rounded-3xl bg-orange-500 p-2
+}
+.service-cards{
+  @apply p-20 max-sm:p-3 flex flex-wrap flex-row gap-5 bg-gray-100
+}
+.service-card{
+  @apply pb-20 flex flex-col p-5 text-wrap gap-4 w-80 bg-white rounded-2xl shadow-md 
+}
+.service-cardtitle{
+  @apply font-bold text-xl
+}
+.service-cardsubtext{
+  @apply text-slate-400 text-wrap
+}
+.button-white{
+  @apply rounded-3xl mt-5 border-2 border-black p-2 gap-4 items-center px-6 text-lg flex flex-row w-max
+}
+.button-div{
+  @apply flex flex-row gap-5 flex-wrap
+}
+.special-offer{
+  @apply flex  flex-row gap-5 px-20 flex-wrap
+}
+.customer-img{
+  @apply rounded-full object-cover
+}
+.customer-text{
+  @apply text-center w-80 text-gray-400
+}
+.customer-card{
+  @apply justify-center flex flex-col items-center
+}
+.customer-cards{
+  @apply flex flex-row gap-6 flex-wrap  justify-center
+}
+.customer-review{
+  @apply gap-12 px-20 flex flex-col items-center
+}
+.email-input{
+  @apply border-none p-2 rounded-3xl
+}
+.email-div{
+  @apply p-2  border-2 rounded-full  border-gray-300 flex flex-row justify-around  
+}
+.signup{
+  @apply bg-orange-600  text-white text-lg max-sm:text-xs rounded-full px-4 p-2
+}
+.subscribe{
+  @apply flex flex-col gap-5 px-20  items-center max-sm:px-0
+}
+.footer{
+  @apply gap-5 flex flex-col flex-wrap px-20 max-sm:px-0
+}
+.footertext{
+  @apply text-gray-400 w-96 max-sm:w-full   font-extralight 
+}
+.icons{
+  @apply bg-white rounded-full p-1
+}
+.icons-div{
+  @apply gap-5 flex flex-row
+}
+.footerlinks{
+  @apply flex flex-row gap-10 
+}
+.footerlinks-text{
+  @apply text-sm max-sm:text-xs font-thin text-gray-400 gap-4 flex flex-col 
+}
+.footer-pdiv{
+  @apply flex flex-row flex-wrap gap-10
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
